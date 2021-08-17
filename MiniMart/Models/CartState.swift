@@ -16,5 +16,6 @@ struct CartItem {
 final class CartState: ObservableObject {
     @Published var cartItems: [CartItem] = []
     @Published var sumQuantity: Int = 0
+    @Published var sumAmount: Int = 0
 }
 

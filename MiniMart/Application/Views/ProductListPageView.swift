@@ -55,7 +55,7 @@ struct ProductListPageView: View {
         }
         .sheet(isPresented: $isCartViewPresented) {
             NavigationView {
-                CartPageView()
+                CartPageView(isCartViewPresented: $isCartViewPresented)
             }
         }
     }
