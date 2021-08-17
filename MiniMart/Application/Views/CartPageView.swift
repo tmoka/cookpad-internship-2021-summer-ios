@@ -41,7 +41,8 @@ struct CartPageView: View {
             }
             .foregroundColor(Color.white)
             .padding(.all)
-            .background(Color.orange).cornerRadius(.infinity)
+            .background(Color.orange)
+            .cornerRadius(10)
             .alert(isPresented: $isPresented) {
                 Alert(title: Text("注文しました"),
                       //message: Text("Thank you for shopping with us."),
