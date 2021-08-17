@@ -40,6 +40,8 @@ struct CartPageView: View {
                 Text("注文する")
             }
             .foregroundColor(Color.white)
+            .frame(height: 30)
+            .frame(maxWidth: .infinity)
             .padding(.all)
             .background(Color.orange)
             .cornerRadius(10)
