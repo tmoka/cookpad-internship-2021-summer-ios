@@ -15,7 +15,7 @@ struct ProductDetailPageView: View {
     
     var body: some View {
         VStack {
-            RemoteImage(urlString: product.imageUrl)
+            RemoteImage(urlString: product.imageUrl).aspectRatio(contentMode: .fit)
             Text(product.name)
                 .font(.title)
             Text("\(product.price)円")
@@ -23,11 +23,10 @@ struct ProductDetailPageView: View {
             Text(product.summary)
                 .font(.caption)
             Button(action: {
-                let item = CartItem(product: self.product, quantity:1)
-                cartState.cartItems.append(item)
+                let item = CartItem(product: product, quantity:1)
                 //print(cartState.cartItems.reduce(0){$0 + $1.quantity})
-                if cartState.cartItems.contains(where: { $0.product.id == product.id }) {
-                    let index = cartState.cartItems.firstIndex(where: { $0.product.id == product.id })
+                if cartState.cartItems.contains(where: { $0.product.id == item.product.id }) {
+                    let index = cartState.cartItems.firstIndex(where: { $0.product.id == item.product.id })
                     cartState.cartItems[index ?? 0].quantity += 1
                     cartState.sumQuantity += 1
                 } else {
