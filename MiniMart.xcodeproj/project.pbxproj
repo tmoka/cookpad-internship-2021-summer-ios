@@ -19,6 +19,7 @@
 		5078335926CB4D85002C2893 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5078335826CB4D85002C2893 /* Apollo */; };
 		5078335C26CB51BD002C2893 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078335B26CB51BD002C2893 /* API.swift */; };
 		5078336126CB532B002C2893 /* ProductListPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078336026CB532B002C2893 /* ProductListPageView.swift */; };
+		5078336326CB5A86002C2893 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078336226CB5A86002C2893 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5078335A26CB4DDA002C2893 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		5078335B26CB51BD002C2893 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5078336026CB532B002C2893 /* ProductListPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPageView.swift; sourceTree = "<group>"; };
+		5078336226CB5A86002C2893 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8AEC041E26B26823000E997E /* Tutorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tutorial.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		11D5A39F26A71D00005BD9C0 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				5078336226CB5A86002C2893 /* Network.swift */,
 				5078335B26CB51BD002C2893 /* API.swift */,
 			);
 			path = DataSources;
@@ -328,6 +331,7 @@
 			files = (
 				5078336126CB532B002C2893 /* ProductListPageView.swift in Sources */,
 				11FD9CA62692B3A700BBCD33 /* UserDefaults+Codable.swift in Sources */,
+				5078336326CB5A86002C2893 /* Network.swift in Sources */,
 				1152031526A66A7500555FBE /* ContentView.swift in Sources */,
 				11FD9CB72692C4BE00BBCD33 /* RemoteImage.swift in Sources */,
 				11A47030269404B000E9C8AD /* ProcessInfo+Extension.swift in Sources */,
